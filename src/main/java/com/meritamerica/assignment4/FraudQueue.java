@@ -1,15 +1,15 @@
 package com.meritamerica.assignment4;
 
 public class FraudQueue {
-	FraudQueue(){
-		
+
+	private static Transaction fraudTransaction;
+
+	public static void addTransaction(Transaction transaction) {
+		fraudTransaction = transaction;
 	}
-	public void addTransaction(Transaction transaction) {
-		
-	}
-	
+
 	public Transaction getTransaction() {
-		return null;
+		return fraudTransaction;
 	}
 
 }
